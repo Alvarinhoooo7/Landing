@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Álvaro Villena Torrejón — Técnico en Electrónica, desarrollador web y firmware. Portfolio de proyectos reales.">
+  <title>Álvaro Villena · Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">AV</a>
+      <ul class="nav__links">
+        <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#canal" data-i18n="nav.channel">Canal</a></li>
+        <li><a href="#habilidades" data-i18n="nav.skills">Habilidades</a></li>
+        <li><a href="#experiencia" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a href="#contacto" class="nav__cta" data-i18n="nav.contact">Contactar</a></li>
+      </ul>
+      <div class="nav__right">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">
+          <span class="lang-toggle__active" id="langLabel">ES</span>
+          <span class="lang-toggle__sep">/</span>
+          <span class="lang-toggle__other" id="langOther">EN</span>
+        </button>
+        <button class="nav__burger" id="navBurger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+      <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+      <a href="#canal" data-i18n="nav.channel">Canal</a>
+      <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+      <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+      <a href="#contacto" data-i18n="nav.contact">Contactar</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__content">
+      <span class="hero__eyebrow">
+        <span data-i18n="hero.eyebrow">Disponible para nuevas oportunidades</span>
+        <span class="hero__eyebrow-sep">·</span>
+        <span>Santiago, Chile</span>
+      </span>
+      <h1 class="hero__name">Álvaro<br>Villena</h1>
+      <div class="hero__subtitle">
+        <p class="hero__subtitle-line" data-i18n="hero.title1">Ing. Electrónica y Sistemas Inteligentes · INACAP</p>
+        <p class="hero__subtitle-line hero__subtitle-line--dim" data-i18n="hero.title2">Técnico Superior en Electrónica · Titulado 2025 · <span class="hero__badge-1">Nº1 de generación</span></p>
+      </div>
+      <div class="hero__roles">
+        <span class="hero__role-sep">·</span>
+        <span class="hero__roles-rotate" id="heroRotate"></span>
+      </div>
+      <p class="hero__desc" data-i18n="hero.desc">
+        Diseño y construyo desde el firmware hasta la interfaz.<br>
+        PCB, ESP32, apps web y móviles que resuelven problemas reales.
+      </p>
+      <div class="hero__actions">
+        <a href="#proyectos" class="btn btn--primary" data-i18n="hero.cta1">Ver proyectos</a>
+        <a href="mailto:alvarovillena7@gmail.com" class="btn btn--ghost" data-i18n="hero.cta2">Contactar</a>
+      </div>
+      <div class="hero__social">
+        <a href="https://www.linkedin.com/in/%C3%A1lvaro-villena-torrej%C3%B3n-992124348" target="_blank" rel="noopener"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@AVfixx" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+        </a>
+        <a href="https://github.com/alvarovillena8" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section sobre-mi" id="sobre-mi">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">01</span>
+        <h2 class="section__title" data-i18n="about.title">Sobre mí</h2>
+      </div>
+      <div class="sobre-mi__grid">
+        <div class="sobre-mi__text reveal">
+          <p data-i18n="about.p1">Soy Técnico de Nivel Superior en Electrónica titulado en INACAP, actualmente cursando
+            el último año de Ingeniería en Electrónica y Sistemas Inteligentes. Con <strong>6 años de experiencia en
+              electrónica automotriz</strong> —ECU, BCM, BSI, TCM, IMMO— y más de un año liderando el área de servicio
+            técnico en SoyMomo.</p>
+          <p data-i18n="about.p2">Combino el mundo físico con el digital: diseño PCBs en KiCad, programo
+            microcontroladores ESP32 y construyo las aplicaciones web que los controlan. Cuando algo me falta, lo
+            aprendo y lo construyo.</p>
+          <a href="https://www.youtube.com/@AVfixx" target="_blank" rel="noopener" class="sobre-mi__yt">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+            <span data-i18n="about.yt">Canal AFix — Reparación PCB en YouTube</span>
+          </a>
+        </div>
+        <div class="sobre-mi__stats">
+          <div class="stat-card reveal">
+            <span class="stat-card__number">6+</span>
+            <span class="stat-card__label" data-i18n="about.stat1">Años en electrónica automotriz</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__number">3</span>
+            <span class="stat-card__label" data-i18n="about.stat2">Proyectos propios desarrollados</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__number">1</span>
+            <span class="stat-card__label" data-i18n="about.stat3">App en producción activa</span>
+          </div>
+          <div class="stat-card reveal">
+            <span class="stat-card__number">5+</span>
+            <span class="stat-card__label" data-i18n="about.stat4">Stacks tecnológicos dominados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="section proyectos" id="proyectos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">02</span>
+        <h2 class="section__title" data-i18n="projects.title">Proyectos</h2>
+      </div>
+
+      <!-- Ecosistema ST SoyMomo -->
+      <article class="project-card reveal">
+        <div class="project-card__header">
+          <div>
+            <span class="badge badge--live" data-i18n="projects.p1.badge">En producción</span>
+            <h3 class="project-card__title">Ecosistema ST SoyMomo</h3>
+            <p class="project-card__subtitle" data-i18n="projects.p1.sub">App web interna para servicio técnico e
+              inventario</p>
+          </div>
+          <a href="https://soymomo-inventario.web.app/" target="_blank" rel="noopener"
+            class="btn btn--small btn--primary">
+            <span data-i18n="projects.p1.cta">Ver app</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+            </svg>
+          </a>
+        </div>
+        <div class="carousel" id="carousel-ecosistema">
+          <div class="carousel__track" id="track-ecosistema"></div>
+          <button class="carousel__btn carousel__btn--prev" data-target="ecosistema" aria-label="Anterior">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+          <button class="carousel__btn carousel__btn--next" data-target="ecosistema" aria-label="Siguiente">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+          <div class="carousel__dots" id="dots-ecosistema"></div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__features">
+            <div class="feature"><span class="feature__icon">📦</span><span data-i18n="projects.p1.f1">Panel de
+                inventario con stock, movimientos y alertas de bajo stock. Exportación PDF/Excel.</span></div>
+            <div class="feature"><span class="feature__icon">🔧</span><span data-i18n="projects.p1.f2">Módulo de
+                servicio técnico completo: órdenes, validaciones, diagnóstico y retiro en tienda.</span></div>
+            <div class="feature"><span class="feature__icon">📄</span><span data-i18n="projects.p1.f3">Generación
+                automática de informes Word y envío al cliente por Gmail via AppScript.</span></div>
+            <div class="feature"><span class="feature__icon">📊</span><span data-i18n="projects.p1.f4">Métricas de
+                producción, ingresos y fallas por período (solo administrador).</span></div>
+            <div class="feature"><span class="feature__icon">✉️</span><span data-i18n="projects.p1.f5">Sistema de envío
+                masivo de correos y recuperación de contraseña con enlace Firebase.</span></div>
+            <div class="feature"><span class="feature__icon">🌐</span><span data-i18n="projects.p1.f6">Formulario
+                público de recepción para agilizar cola de clientes en tienda.</span></div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">HTML / CSS / JS</span>
+            <span class="tag">Firebase Auth</span>
+            <span class="tag">Cloud Firestore</span>
+            <span class="tag">Firebase Hosting</span>
+            <span class="tag">Google AppScript</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- VatiOS -->
+      <article class="project-card reveal">
+        <div class="project-card__header">
+          <div>
+            <span class="badge badge--dev" data-i18n="projects.p2.badge">En desarrollo · Proyecto de Título</span>
+            <h3 class="project-card__title">VatiOS</h3>
+            <p class="project-card__subtitle" data-i18n="projects.p2.sub">Plataforma para verificación de medidores
+              eléctricos monofásicos en terreno</p>
+          </div>
+        </div>
+        <div class="vatios-banner">
+          <img src="images/logos/vatios-logo.png" alt="VatiOS logo" class="vatios-banner__logo">
+        </div>
+        <div class="vatios-arch">
+          <div class="arch-node">
+            <div class="arch-node__icon">⚡</div>
+            <strong data-i18n="projects.p2.node1">Firmware ESP32</strong>
+            <small>C++ · PlatformIO</small>
+            <div class="arch-node__tags"><span>PZEM-004T</span><span>BLE</span><span>NTP</span></div>
+          </div>
+          <div class="arch-connectors">
+            <div class="arch-connector">BLE</div>
+            <div class="arch-connector">Wi-Fi · Firestore</div>
+          </div>
+          <div class="arch-right">
+            <div class="arch-node">
+              <div class="arch-node__icon">📱</div>
+              <strong>VoltiOS App</strong>
+              <small>Flutter · Dart</small>
+              <div class="arch-node__tags"><span>BLE pairing</span><span>Dashboard</span></div>
+            </div>
+            <div class="arch-node">
+              <div class="arch-node__icon">🖥</div>
+              <strong data-i18n="projects.p2.node3">Panel Admin</strong>
+              <small>React · Vite</small>
+              <div class="arch-node__tags"><span data-i18n="projects.p2.tag.tech">Técnicos</span><span
+                  data-i18n="projects.p2.tag.eq">Equipos</span></div>
+            </div>
+            <div class="arch-node">
+              <div class="arch-node__icon">🔥</div>
+              <strong>Firebase Backend</strong>
+              <small>Node · Cloud Functions</small>
+              <div class="arch-node__tags"><span>Auth</span><span>Firestore</span><span>Storage</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__features">
+            <div class="feature"><span class="feature__icon">🔌</span><span data-i18n="projects.p2.f1">Firmware ESP32:
+                sensor PZEM-004T, heartbeat a Firestore, sugerencia de medición automática.</span></div>
+            <div class="feature"><span class="feature__icon">📱</span><span data-i18n="projects.p2.f2">App móvil
+                Flutter: onboarding, Auth Firebase, pairing BLE, dashboard en tiempo real.</span></div>
+            <div class="feature"><span class="feature__icon">🖥</span><span data-i18n="projects.p2.f3">Panel admin React
+                + Vite: gestión de técnicos, equipos y mediciones históricas.</span></div>
+            <div class="feature"><span class="feature__icon">☁️</span><span data-i18n="projects.p2.f4">Backend Node.js +
+                Firebase Cloud Functions para lógica de negocio y validaciones.</span></div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">Flutter / Dart</span>
+            <span class="tag">ESP32 / C++</span>
+            <span class="tag">PlatformIO</span>
+            <span class="tag">React / Vite</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">BLE</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PCB KiCad -->
+      <article class="project-card reveal">
+        <div class="project-card__header">
+          <div>
+            <span class="badge badge--pcb">Hardware · KiCad</span>
+            <h3 class="project-card__title" data-i18n="projects.p3.title">Diseños PCB</h3>
+            <p class="project-card__subtitle" data-i18n="projects.p3.sub">Esquemático y layout completo para equipos
+              electrónicos propios</p>
+          </div>
+        </div>
+        <div class="pcb-split">
+          <div class="pcb-sub">
+            <h4 class="pcb-sub__title" data-i18n="projects.p3.sub1">Audiómetro con ESP32</h4>
+            <div class="carousel carousel--sm" id="carousel-audiometro">
+              <div class="carousel__track" id="track-audiometro"></div>
+              <button class="carousel__btn carousel__btn--prev" data-target="audiometro" aria-label="Anterior">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <button class="carousel__btn carousel__btn--next" data-target="audiometro" aria-label="Siguiente">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+              <div class="carousel__dots" id="dots-audiometro"></div>
+            </div>
+            <p class="pcb-sub__desc" data-i18n="projects.p3.desc1">Equipo médico básico con PCB custom. Exporta datos a
+              Google Sheets via AppScript. Web app para graficar y exportar resultados a PDF.</p>
+          </div>
+          <div class="pcb-sub">
+            <h4 class="pcb-sub__title" data-i18n="projects.p3.sub2">Control de Acceso v1 &amp; v2</h4>
+            <div class="carousel carousel--sm" id="carousel-control">
+              <div class="carousel__track" id="track-control"></div>
+              <button class="carousel__btn carousel__btn--prev" data-target="control" aria-label="Anterior">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 18 9 12 15 6" />
+                </svg>
+              </button>
+              <button class="carousel__btn carousel__btn--next" data-target="control" aria-label="Siguiente">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+              <div class="carousel__dots" id="dots-control"></div>
+            </div>
+            <p class="pcb-sub__desc" data-i18n="projects.p3.desc2">Dos versiones de sistema de control de acceso
+              electrónico. Diseño completo de esquemático y PCB layout en KiCad.</p>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__stack">
+            <span class="tag">KiCad</span>
+            <span class="tag">ESP32</span>
+            <span class="tag">SMD / THT</span>
+            <span class="tag">Google AppScript</span>
+            <span class="tag">Google Sheets</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CANAL YOUTUBE -->
+  <section class="section canal" id="canal">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">03</span>
+        <h2 class="section__title" data-i18n="channel.title">Canal AFix</h2>
+        <p class="section__desc" data-i18n="channel.desc">Shorts de reparación de PCB, diagnóstico electrónico y
+          proyectos hands-on.</p>
+      </div>
+      <div class="shorts-grid reveal">
+        <!-- Reemplaza SHORTS_ID_X con los IDs de tus videos: youtube.com/shorts/SHORTS_ID_X -->
+        <div class="short-card">
+          <div class="short-card__frame">
+            <iframe src="https://www.youtube.com/embed/zgqIVA-izRs?mute=1&rel=0&modestbranding=1" title="AFix Short 1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy">
+            </iframe>
+          </div>
+        </div>
+        <div class="short-card">
+          <div class="short-card__frame">
+            <iframe src="https://www.youtube.com/embed/PEmh-eeIKgs?mute=1&rel=0&modestbranding=1" title="AFix Short 2"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy">
+            </iframe>
+          </div>
+        </div>
+        <div class="short-card">
+          <div class="short-card__frame">
+            <iframe src="https://www.youtube.com/embed/FWrktI1CwoU?mute=1&rel=0&modestbranding=1" title="AFix Short 3"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="canal__cta reveal">
+        <a href="https://www.youtube.com/@AVfixx" target="_blank" rel="noopener" class="btn btn--ghost">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+          <span data-i18n="channel.cta">Ver canal completo en YouTube</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section habilidades" id="habilidades">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">04</span>
+        <h2 class="section__title" data-i18n="skills.title">Habilidades</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+            </svg>
+            <span data-i18n="skills.g1">Electrónica &amp; Hardware</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--adv" data-i18n="skills.s1.1">Reparación PCB SMD / THT</span>
+            <span class="skill-tag skill-tag--adv" data-i18n="skills.s1.2">Electrónica Automotriz</span>
+            <span class="skill-tag skill-tag--adv" data-i18n="skills.s1.3">ECU · BCM · BSI · TCM · IMMO</span>
+            <span class="skill-tag skill-tag--adv" data-i18n="skills.s1.4">Osciloscopio · Multímetro</span>
+            <span class="skill-tag skill-tag--adv" data-i18n="skills.s1.5">Estación de soldadura</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <polyline points="8 21 12 17 16 21" />
+            </svg>
+            <span data-i18n="skills.g2">Firmware &amp; Embedded</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--mid">ESP32</span>
+            <span class="skill-tag skill-tag--mid" data-i18n="skills.s2.2">C++ · PlatformIO</span>
+            <span class="skill-tag skill-tag--mid" data-i18n="skills.s2.3">BLE · Wi-Fi</span>
+            <span class="skill-tag skill-tag--mid" data-i18n="skills.s2.4">UART · I²C · SPI</span>
+            <span class="skill-tag skill-tag--mid">Flutter · Dart</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+            <span data-i18n="skills.g3">Web &amp; Cloud</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--mid">HTML · CSS · JavaScript</span>
+            <span class="skill-tag skill-tag--mid">React</span>
+            <span class="skill-tag skill-tag--mid" data-i18n="skills.s3.3">Firebase (Auth, Firestore, Hosting)</span>
+            <span class="skill-tag skill-tag--mid">Google AppScript</span>
+            <span class="skill-tag skill-tag--mid">Excel VBA</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <h3 class="skill-group__title">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+            <span data-i18n="skills.g4">Diseño &amp; Herramientas</span>
+          </h3>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--mid" data-i18n="skills.s4.1">KiCad (PCB Design)</span>
+            <span class="skill-tag skill-tag--mid" data-i18n="skills.s4.2">Autodesk Inventor 3D</span>
+            <span class="skill-tag skill-tag--mid">SP Flash Tool</span>
+            <span class="skill-tag skill-tag--mid">ADB · Fastboot</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="section experiencia" id="experiencia">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">05</span>
+        <h2 class="section__title" data-i18n="exp.title">Experiencia</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__date" data-i18n="exp.e1.date">Ene 2025 — Abr 2026</span>
+              <span class="badge badge--live" data-i18n="exp.e1.dur">1 año 3 meses</span>
+            </div>
+            <h3 class="timeline__role" data-i18n="exp.e1.role">Encargado de Servicio Técnico</h3>
+            <p class="timeline__company">SoyMomo · Santiago, Chile</p>
+            <ul class="timeline__bullets">
+              <li data-i18n="exp.e1.b1">Diagnóstico, análisis y reparación de PCB a nivel componente; instalación y actualización de APK, firmware y software en equipos de servicio técnico.</li>
+              <li data-i18n="exp.e1.b2">Desarrollé ecosistema web para gestión integral de ingreso/salida de productos, control de inventario y trazabilidad de equipos.</li>
+              <li data-i18n="exp.e1.b3">Scripts automatizados para envío masivo de correos y generación dinámica de documentos .docx (informes, devoluciones, documentación administrativa).</li>
+              <li data-i18n="exp.e1.b4">Optimización de flujos operativos: reduje el tiempo de atención promedio a <strong>1 día hábil por dispositivo</strong>.</li>
+              <li data-i18n="exp.e1.b5">Reparación integral de equipos electrónicos e integración de soluciones técnicas con mejora continua de procesos.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__date" data-i18n="exp.e2.date">Mar 2019 — Ene 2025</span>
+              <span class="badge" data-i18n="exp.e2.dur">6 años</span>
+            </div>
+            <h3 class="timeline__role" data-i18n="exp.e2.role">Técnico Electrónico Automotriz</h3>
+            <p class="timeline__company" data-i18n="exp.e2.company">Electricidad y Electrónica Automotriz · Chile</p>
+            <ul class="timeline__bullets">
+              <li data-i18n="exp.e2.b1">Programación y configuración de llaves automotrices, inmovilizadores, ECU, odómetros y sistemas electrónicos vehiculares.</li>
+              <li data-i18n="exp.e2.b2">Diagnóstico electrónico mediante escáner avanzado, codificación y adaptación de módulos; instalación y reparación de sistemas eléctricos automotrices.</li>
+              <li data-i18n="exp.e2.b3">Confección y duplicado de llaves (vehículos y domicilios), aperturas técnicas, ganzúas Lishi y maquinaria CNC Xhorse.</li>
+              <li data-i18n="exp.e2.b4">Reparación de PCB automotrices, módulos alzavidrios e instalación de GPS, alarmas, inmovilizadores y cerraduras eléctricas.</li>
+              <li data-i18n="exp.e2.b5">Instalaciones eléctricas domiciliarias y vehiculares; integración de soluciones técnicas para diagnóstico y automatización vehicular.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="education reveal">
+        <h3 class="education__title" data-i18n="edu.title">Formación</h3>
+        <div class="education__grid">
+          <div class="education__item">
+            <span class="badge badge--dev" data-i18n="edu.e1.badge">En curso · 2023</span>
+            <strong data-i18n="edu.e1.name">Ingeniería en Electrónica y Sistemas Inteligentes</strong>
+            <span>INACAP · Santiago Sur</span>
+          </div>
+          <div class="education__item">
+            <span class="badge badge--pcb" data-i18n="edu.e2.badge">Titulado 2025 · 🥇 Nº1 generación</span>
+            <strong data-i18n="edu.e2.name">Técnico de Nivel Superior en Electrónica</strong>
+            <span>INACAP · Santiago Sur</span>
+          </div>
+          <div class="education__item">
+            <span class="badge">2015 — 2019</span>
+            <strong data-i18n="edu.e3.name">Educación Media</strong>
+            <span>Colegio Industrial Vasco Nuñez de Balboa</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section contacto" id="contacto">
+    <div class="container container--narrow">
+      <div class="section__header section__header--center">
+        <span class="section__label">06</span>
+        <h2 class="section__title" data-i18n="contact.title">¿Hablamos?</h2>
+        <p class="section__desc" data-i18n="contact.desc">Disponible para nuevos proyectos, roles técnicos o
+          colaboraciones.<br>Respondo siempre.</p>
+      </div>
+      <!-- Formulario de contacto -->
+      <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/alvarovillena7@gmail.com"
+        method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" data-i18n-placeholder="contact.form.subject"
+          value="Contacto desde portfolio">
+        <input type="hidden" name="_next" value="">
+        <div class="contact-form__row">
+          <input type="text" name="nombre" class="contact-form__input" placeholder="Nombre"
+            data-i18n-ph="contact.form.name" required>
+          <input type="email" name="email" class="contact-form__input" placeholder="Email" required>
+        </div>
+        <textarea name="mensaje" class="contact-form__input contact-form__textarea" placeholder="Mensaje"
+          data-i18n-ph="contact.form.msg" rows="4" required></textarea>
+        <button type="submit" class="btn btn--primary btn--lg contact-form__submit" data-i18n="contact.form.send">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13" />
+            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+          </svg>
+          Enviar mensaje
+        </button>
+      </form>
+
+      <div class="contact-divider reveal"><span data-i18n="contact.or">o escríbeme directamente</span></div>
+
+      <div class="contact-actions reveal">
+        <a href="https://wa.me/56986902015?text=Hola%20Álvaro%2C%20vi%20tu%20portfolio%20y%20quiero%20contactarte."
+          target="_blank" rel="noopener" class="btn btn--wsp btn--lg">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          WhatsApp
+        </a>
+        <a href="mailto:alvarovillena7@gmail.com" class="btn btn--ghost btn--lg">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          alvarovillena7@gmail.com
+        </a>
+      </div>
+      <div class="contact-social reveal">
+        <a href="https://www.linkedin.com/in/%C3%A1lvaro-villena-torrej%C3%B3n-992124348" target="_blank" rel="noopener"
+          class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://www.youtube.com/@AVfixx" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path
+              d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+          </svg>
+          AFix · YouTube
+        </a>
+        <a href="https://github.com/alvarovillena8" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path
+              d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://soymomo-inventario.web.app/" target="_blank" rel="noopener" class="social-link">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+          </svg>
+          <span data-i18n="contact.app">App en producción</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>Álvaro Villena Torrejón &copy; 2025</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
