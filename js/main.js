@@ -9,6 +9,7 @@ const LANGS = {
     'nav.skills':     'Habilidades',
     'nav.experience': 'Experiencia',
     'nav.contact':    'Contactar',
+    'nav.themeToggle': 'Cambiar tema',
 
     'hero.eyebrow': 'Disponible para nuevas oportunidades',
     'hero.title1':  'Ing. Electrónica y Sistemas Inteligentes · INACAP',
@@ -18,9 +19,12 @@ const LANGS = {
     'hero.cta2':    'Contactar',
 
     'about.title': 'Sobre mí',
-    'about.p1':    'Titulado Técnico en Electrónica en INACAP logrando el <strong>primer lugar de mi generación</strong>, actualmente en el último año de Ingeniería Electrónica y Sistemas Inteligentes. Con más de 6 años de experiencia en electrónica automotriz y liderando el área de servicio técnico en SoyMomo.',
-    'about.p2':    'Me apasiona el desarrollo de sistemas IoT y la automatización. Combino hardware y software: diseño PCBs, programo ESP32 y construyo las aplicaciones web y móviles que los controlan. Cuando algo me falta, lo aprendo y lo construyo.',
-    'about.yt':    'Canal AFix — Reparación PCB en YouTube',
+    'about.story.title': 'Mi Historia',
+    'about.p1':    'Soy Técnico de Nivel Superior en Electrónica titulado en INACAP, actualmente cursando el último año de Ingeniería en Electrónica y Sistemas Inteligentes. Con <strong>6 años de experiencia en electrónica automotriz</strong> —ECU, BCM, BSI, TCM, IMMO— y más de un año liderando el área de servicio técnico en SoyMomo.',
+    'about.p2':    'Combino el mundo físico con el digital: diseño PCBs en KiCad, programo microcontroladores ESP32 y construyo las aplicaciones web que los controlan. Cuando algo me falta, lo aprendo y lo construyo.',
+    'about.yt.title': 'AFix en YouTube',
+    'about.yt.desc': 'Comparto shorts de diagnóstico y reparación de hardware a nivel componente, micro-soldadura e ingeniería inversa.',
+    'about.yt':    'Canal AFix en YouTube',
     'about.stat1': 'Años en electrónica automotriz',
     'about.stat2': 'Proyectos propios desarrollados',
     'about.stat3': 'App en producción activa',
@@ -79,7 +83,6 @@ const LANGS = {
     'exp.title':    'Experiencia',
     'exp.e1.date':  'Ene 2025 — Abr 2026',
     'exp.e1.dur':   '1 año 3 meses',
-    'exp.e1.role':  'Líder Área Servicio Técnico',
     'exp.e1.role':  'Encargado de Servicio Técnico',
     'exp.e1.b1':    'Diagnóstico, análisis y reparación de PCB a nivel componente; instalación y actualización de APK, firmware y software en equipos de servicio técnico.',
     'exp.e1.b2':    'Desarrollé ecosistema web para gestión integral de ingreso/salida de productos, control de inventario y trazabilidad de equipos.',
@@ -99,11 +102,14 @@ const LANGS = {
     'edu.title':    'Formación',
     'edu.e1.badge': 'En curso',
     'edu.e1.name':  'Ingeniería en Electrónica y Sistemas Inteligentes',
-    'edu.e2.badge': 'Titulado 2025',
+    'edu.e2.badge': 'Titulado 2025 · 🥇 Nº1 generación',
     'edu.e2.name':  'Técnico de Nivel Superior en Electrónica',
 
     'contact.title':        '¿Hablamos?',
     'contact.desc':         'Disponible para nuevos proyectos, roles técnicos o colaboraciones.<br>Respondo siempre.',
+    'contact.form.name':    'Nombre',
+    'contact.form.subject': 'Contacto desde portfolio',
+    'contact.form.msg':     'Mensaje',
     'contact.form.send':    'Enviar mensaje',
     'contact.or':           'o escríbeme directamente',
     'contact.app':          'App en producción',
@@ -117,6 +123,7 @@ const LANGS = {
     'nav.skills':     'Skills',
     'nav.experience': 'Experience',
     'nav.contact':    'Contact',
+    'nav.themeToggle': 'Toggle theme',
 
     'hero.eyebrow': 'Available for new opportunities',
     'hero.title1':  'Electronics & Intelligent Systems Engineering · INACAP',
@@ -126,9 +133,12 @@ const LANGS = {
     'hero.cta2':    'Contact me',
 
     'about.title': 'About me',
+    'about.story.title': 'My Story',
     'about.p1':    'Certified Electronics Technician from INACAP, graduating <strong>top of my class (Nº1)</strong>, currently in my final year of Electronics & Intelligent Systems Engineering. Over 6 years in automotive electronics and leading the technical service area at SoyMomo.',
     'about.p2':    'Passionate about IoT systems and automation. I combine hardware and software: PCB design, ESP32 firmware, and the web & mobile apps that control them. When I need a skill, I learn it and build with it.',
-    'about.yt':    'AFix Channel — PCB Repair on YouTube',
+    'about.yt.title': 'AFix on YouTube',
+    'about.yt.desc': 'I share shorts about component-level hardware repair, micro-soldering, and reverse engineering.',
+    'about.yt':    'AFix Channel on YouTube',
     'about.stat1': 'Years in automotive electronics',
     'about.stat2': 'Personal projects built',
     'about.stat3': 'App live in production',
@@ -187,7 +197,6 @@ const LANGS = {
     'exp.title':    'Experience',
     'exp.e1.date':  'Jan 2025 — Apr 2026',
     'exp.e1.dur':   '1 year 3 months',
-    'exp.e1.role':  'Technical Service Area Lead',
     'exp.e1.role':  'Technical Service Manager',
     'exp.e1.b1':    'Component-level PCB diagnosis, analysis and repair; APK, firmware and software installation on service equipment.',
     'exp.e1.b2':    'Built a web ecosystem for full product intake/output management, inventory control and equipment traceability.',
@@ -207,11 +216,14 @@ const LANGS = {
     'edu.title':    'Education',
     'edu.e1.badge': 'In progress',
     'edu.e1.name':  'Electronics & Intelligent Systems Engineering',
-    'edu.e2.badge': 'Graduated 2025',
+    'edu.e2.badge': 'Graduated 2025 · 🥇 Nº1 in class',
     'edu.e2.name':  'Associate Degree in Electronics Technology',
 
     'contact.title':        'Let\'s talk',
     'contact.desc':         'Available for new projects, technical roles or collaborations.<br>I always reply.',
+    'contact.form.name':    'Name',
+    'contact.form.subject': 'Contact from portfolio',
+    'contact.form.msg':     'Message',
     'contact.form.send':    'Send message',
     'contact.or':           'or reach me directly',
     'contact.app':          'Live app',
@@ -234,6 +246,28 @@ function applyLang(lang) {
       el.innerHTML = dict[key];
     }
   });
+
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph');
+    if (dict[key] !== undefined) {
+      el.placeholder = dict[key];
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (dict[key] !== undefined) {
+      el.value = dict[key];
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    const key = el.getAttribute('data-i18n-aria');
+    if (dict[key] !== undefined) {
+      el.setAttribute('aria-label', dict[key]);
+    }
+  });
+
   // Update html lang attr
   document.documentElement.lang = lang;
   // Update toggle labels
@@ -243,6 +277,7 @@ function applyLang(lang) {
   roleIdx = 0;
   showRole(ROLES[lang][0]);
   currentLang = lang;
+  localStorage.setItem('lang', lang);
 }
 
 // Language toggle
@@ -352,9 +387,15 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
-navBurger.addEventListener('click', () => navMobile.classList.toggle('open'));
+navBurger.addEventListener('click', () => {
+  navMobile.classList.toggle('open');
+  navBurger.classList.toggle('open');
+});
 navMobile.querySelectorAll('a').forEach(a =>
-  a.addEventListener('click', () => navMobile.classList.remove('open'))
+  a.addEventListener('click', () => {
+    navMobile.classList.remove('open');
+    navBurger.classList.remove('open');
+  })
 );
 
 const navLinks = document.querySelectorAll('.nav__links a[href^="#"]');
@@ -377,3 +418,97 @@ const revObs = new IntersectionObserver(entries => {
 }, { threshold: 0.08 });
 
 document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+// =============================================
+// THEME SELECTOR (DARK/LIGHT MODE)
+// =============================================
+const htmlEl = document.documentElement;
+const themeToggleBtn = document.getElementById('themeToggle');
+
+function initTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    if (savedTheme === 'light') {
+      htmlEl.classList.add('light');
+      htmlEl.classList.remove('dark');
+    } else {
+      htmlEl.classList.add('dark');
+      htmlEl.classList.remove('light');
+    }
+  } else {
+    // OS Preference or Dark as default
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    if (prefersLight) {
+      htmlEl.classList.add('light');
+      htmlEl.classList.remove('dark');
+    } else {
+      htmlEl.classList.add('dark');
+      htmlEl.classList.remove('light');
+    }
+  }
+}
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', () => {
+    if (htmlEl.classList.contains('light')) {
+      htmlEl.classList.remove('light');
+      htmlEl.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      htmlEl.classList.remove('dark');
+      htmlEl.classList.add('light');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+}
+
+// Initialize theme immediately
+initTheme();
+
+// Listen to system theme changes dynamically
+window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+  if (!localStorage.getItem('theme')) {
+    if (e.matches) {
+      htmlEl.classList.add('light');
+      htmlEl.classList.remove('dark');
+    } else {
+      htmlEl.classList.add('dark');
+      htmlEl.classList.remove('light');
+    }
+  }
+});
+
+// Auto-detect browser language or load from localStorage on startup
+const savedLang = localStorage.getItem('lang');
+if (savedLang && (savedLang === 'es' || savedLang === 'en')) {
+  applyLang(savedLang);
+} else {
+  const userLang = navigator.language || navigator.userLanguage;
+  if (userLang && userLang.startsWith('en')) {
+    applyLang('en');
+  } else {
+    applyLang('es');
+  }
+}
+
+// =============================================
+// MOUSE RADIAL GLOW FOR PREMIUM CARDS
+// =============================================
+document.querySelectorAll('.bento-card, .stat-card, .project-card, .skill-group, .arch-node').forEach(card => {
+  let rect = null;
+  card.addEventListener('mouseenter', () => {
+    rect = card.getBoundingClientRect();
+  });
+  card.addEventListener('mousemove', e => {
+    if (!rect) {
+      rect = card.getBoundingClientRect();
+    }
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    card.style.setProperty('--mouse-x', `${x}px`);
+    card.style.setProperty('--mouse-y', `${y}px`);
+  });
+  card.addEventListener('mouseleave', () => {
+    rect = null;
+  });
+});
